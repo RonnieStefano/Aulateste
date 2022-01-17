@@ -1,0 +1,12 @@
+import  random
+
+r = random.randint(1,100)  # Computador gera um número aleatório de 1 a 100
+try:
+    print("favor inserir apenas numeros, se não o codigo da erro, brincadeira oO, mas ele so funciona se for numero inteiro!")
+    num = int(input('Digite um número de sorteios: ')) 
+    for r in range(num):
+        x = random.randint(1,100)
+        print((x),'numero sorteado')
+except ValueError:
+    print("Eu falei para usar numeros inteiros, vamos tentar novamente!!! ")
+print('numeros do sorteio estão pronto!!!') 
